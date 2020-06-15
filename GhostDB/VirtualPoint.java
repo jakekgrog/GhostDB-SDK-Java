@@ -4,15 +4,16 @@ package GhostDB;
  * VirtualPoint
  */
 public class VirtualPoint {
-    private int node;
+    private Node node;
+    // CRC32 Hash
     private int index;
 
-    public VirtualPoint(int node, int index) {
+    public VirtualPoint(Node node, int index) {
         this.node = node;
         this.index = index;
     }
 
-    public int getNode() {
+    public Node getNode() {
         return this.node;
     }
 
