@@ -1,12 +1,13 @@
 package GhostDB;
 
+import java.util.zip.CRC32;
+
 /**
  * VirtualPoint
  */
 public class VirtualPoint {
     private Node node;
-    // CRC32 Hash
-    private int index;
+    private CRC32 index;
 
     public VirtualPoint(Node node, int index) {
         this.node = node;

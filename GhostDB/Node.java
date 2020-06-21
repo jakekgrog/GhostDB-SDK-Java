@@ -1,16 +1,18 @@
 package GhostDB;
 
+import java.util.zip.CRC32;
+
 /**
  * Node
  */
 public class Node {
 
-    private String key;
-    private VirtualPoint vp;
-    private Node left;
-    private Node right;
+    public CRC32 key;
+    public VirtualPoint vp;
+    public Node left;
+    public Node right;
 
-    public Node(String key, VirtualPoint vp, Node left, Node right) {
+    public Node(CRC32 key, VirtualPoint vp, Node left, Node right) {
         this.key = key;
         this.vp = vp;
         this.left = left;
